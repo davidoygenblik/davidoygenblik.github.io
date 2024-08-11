@@ -1,10 +1,10 @@
 basic_settings:
   site_title: Journal
   site_tagline: Security Researcher, Cat Lover and Escape Room Aficionado!
-  #favicon_image: /images/favicon.png
+  favicon_image: /images/initial_photos/pumpkin_icon.png
 
 header_settings:
-  logo_image: /images/pumpkin_icon.png
+  logo_image: /images/initial_photos/pumpkin_icon.png
   logo_width: 200
   overlay_opacity: 0.7
 
@@ -12,10 +12,14 @@ menu_settings:
   menu_items:
     - title: 'Home'
       url: '/'
-    - title: 'Projects'
-      url: '/projects/'
+    - title: 'Publications'
+      url: '/publications'
+    - title: 'Awards and Service'
+      url: '/aas'
+    - title: 'Teaching'
+      url: '/teaching'
     - title: 'About'
-      url: '/about'
+      url: '/About'
     - title: 'Contact'
       url: '/contact'
 
