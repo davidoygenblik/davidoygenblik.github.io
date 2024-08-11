@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>David Oygenblik</title>
+		<title>{{ page.title }}</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
@@ -15,10 +15,7 @@
     		</ul>
 		</nav>
 		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm David Oygenblik...</h1>
-				<p>...and heres my cat pumpkin. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
+    		{{ content }}
 		</div><!-- /.container -->
 		<footer>
     		<ul>
