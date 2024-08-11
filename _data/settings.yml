@@ -18,8 +18,10 @@ menu_settings:
       url: '/awas'
     - title: 'Teaching'
       url: '/teaching'
+    - title: 'Blog'
+      url: '/posts/'
     - title: 'About'
-      url: '/About'
+      url: '/about'
     - title: 'Contact'
       url: '/contact'
 
