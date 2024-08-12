@@ -1,8 +1,8 @@
 ---
 title: 'AI Psychiatry Presented at USENIX 24'
 date: 2024-08-11 00:00:00
-featured_image: '/images/initial_photos/usenix_logo_300x150_neat_2.png'
-excerpt: Presentation of my work at USENIX 24 as well as some of my favorite papers from the conference.
+excerpt: Presentation of my work, 'AI Psychiatry Forensic Investigation of Deep Learning Networks in Memory Images', at USENIX 24. 
+  Will also include links to highlight some of my favorite works at the conference! 
 ---
 
 ![](/images/initial_photos/usenix_logo_300x150_neat_2.png)
