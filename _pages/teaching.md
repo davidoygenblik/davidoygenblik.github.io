@@ -1,6 +1,6 @@
 ---
 title: Teaching
-subtitle: Conference and Workshop Publications
+subtitle: Lecturer and Teaching Experience
 featured_image: /images/initial_photos/profile_pic.JPG
 ---
 
