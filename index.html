@@ -17,7 +17,7 @@ featured_image: /images/initial_photos/profile_pic.JPG
 				<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
 			</div>
 
-			{% if post.featured_image %}
+			{% if post.featured_image and post.use_image_in_home %}
 			<a href="{{ post.url | relative_url }}" class="blog-post__image" style="background-image: url({{ post.featured_image | relative_url }});"></a>
 			{% endif %}
 
