@@ -2,7 +2,7 @@
 title: 'AI Psychiatry Presented at USENIX 24'
 date: 2024-08-11 00:00:00
 featured_image: '/images/initial_photos/usenix_logo_300x150_neat_2.png'
-excerpt: This page is a demo that shows everything you can do inside portfolio and blog posts. We've included everything you need to create engaging posts about your work, and show off your case studies in a beautiful way.
+excerpt: Presentation of my work at USENIX 24 as well as some of my favorite papers from the conference.
 ---
 
 ![](/images/initial_photos/usenix_logo_300x150_neat_2.png)
