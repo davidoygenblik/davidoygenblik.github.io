@@ -3,11 +3,13 @@ title: Grants and Awards
 subtitle: List of grants and awards earned as well as grant proposals worked on.
 featured_image: /images/initial_photos/profile_pic.JPG
 ---
+
 <!--- Insert picture of award/grant above --->
 
 ## Grants
 
 ---
+
 - **AI Psychiatry: Forensic Investigation of Deep Learning Networks in Memory Images**
     
     Inaugural GTRI Research Fellowship, $80K, Submitted April. 2021. *Received Funding.*
