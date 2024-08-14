@@ -1,7 +1,7 @@
 ---
 title: About 
 description: Who I am!
-featured-image: /images/initial_photos/profile_pic.JPG
+featured_image: /images/initial_photos/profile_pic.JPG
 ---
 
 Hello! My name is David Oygenblik and I am a fourth-year Ph.D. student advised by Professor Brendan Saltaformaggio in the School of Electrical and Computer Engineering at the Georgia
