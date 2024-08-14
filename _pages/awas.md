@@ -14,9 +14,11 @@ featured_image: /images/initial_photos/profile_pic.JPG
     
 Inaugural GTRI Research Fellowship, **$80K**, Submitted April. 2021. *Received Funding.*
 
-**Did AI Crash My Car? Automated End-To-End Investigation of AI Failures in Cyber-Physical Systems.**
 
-NIJ FY24 Research and Development in Forensic Science for Criminal Justice Purposes, **$850K**, Submitted April. 2024. *In Submission.*
+
+ <!--- **Did AI Crash My Car? Automated End-To-End Investigation of AI Failures in Cyber-Physical Systems.**
+
+NIJ FY24 Research and Development in Forensic Science for Criminal Justice Purposes, **$850K**, Submitted April. 2024. *In Submission.* --->
  
 **USENIX Security 2024 Student Grant.** 
 
