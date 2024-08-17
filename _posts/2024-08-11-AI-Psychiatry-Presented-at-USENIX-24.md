@@ -17,8 +17,9 @@ Below is the link to the accepted paper:
 
 [AI Psychiatry: Forensic Investigation of Deep Learning Networks in Memory Images](https://www.usenix.org/conference/usenixsecurity24/presentation/oygenblik)
 
-[![Link Redirect to Youtube Presentation Video :)](https://img.youtube.com/vi/9aokXWJTy48&t=3s/0.jpg)](https://www.youtube.com/watch?v=9aokXWJTy48&t=3s)
+Watch the presentation:
 
+<iframe  title="YouTube video player" width="480" height="390" src="https://www.youtube.com/watch?v=9aokXWJTy48autoplay=1" frameborder="0" allowfullscreen></iframe>
 
 
 **Thank you CyFI Lab!!**
