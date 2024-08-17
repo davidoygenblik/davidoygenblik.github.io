@@ -1,7 +1,7 @@
 ---
 title: 'AI Psychiatry Presented at USENIX 24'
 date: 2024-08-11 00:00:00
-featured_image: /images/initial_photos/profile_pic.JPG
+featured_image: /images/usenix_2024/present.png
 excerpt: Presentation of my work, 'AI Psychiatry Forensic Investigation of Deep Learning Networks in Memory Images', at USENIX 24. 
   Will also include links to highlight some of my favorite works at the conference! 
 ---
@@ -17,5 +17,22 @@ Below is the link to the accepted paper:
 
 [AI Psychiatry: Forensic Investigation of Deep Learning Networks in Memory Images](https://www.usenix.org/conference/usenixsecurity24/presentation/oygenblik)
 
-Will update this post with the presentation video, and links to other exciting  presentations at the conference! 
+[![Link Redirect to Youtube Presentation Video :)](https://img.youtube.com/vi/9aokXWJTy48&t=3s/0.jpg)](https://www.youtube.com/watch?v=9aokXWJTy48&t=3s)
+
+
+
+**Thank you CyFI Lab!!**
+
+![](/images/usenix_2024/cyfi_lab.png)
+
+
+### Some Other Interesting Works From USENIX 2024:
+
+[GPU Memory Exploitation for Fun and Profit](https://www.usenix.org/conference/usenixsecurity24/presentation/guo-yanan)
+
+[Malla: Demystifying Real-world Large Language Model Integrated Malicious Services](https://www.usenix.org/conference/usenixsecurity24/presentation/lin-zilong)
+
+[Adversarial Illusions in Multi-Modal Embeddings](https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-tingwei)
+
+[ChainReactor: Automated Privilege Escalation Chain Discovery via AI Planning](https://www.usenix.org/conference/usenixsecurity24/presentation/de-pasquale)
 
