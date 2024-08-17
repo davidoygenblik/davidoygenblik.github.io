@@ -19,7 +19,7 @@ Below is the link to the accepted paper:
 
 Watch the presentation:
 
-<iframe  title="YouTube video player" width="480" height="390" src="https://www.youtube.com/watch?v=9aokXWJTy48?autoplay=1" frameborder="0" allowfullscreen></iframe>
+<iframe  title="YouTube video player" width="480" height="390" src="https://www.youtube.com/watch?v=9aokXWJTy48" frameborder="0" allowfullscreen></iframe>
 
 
 **Thank you CyFI Lab!!**
