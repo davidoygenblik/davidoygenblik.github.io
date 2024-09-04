@@ -18,6 +18,8 @@ menu_settings:
       url: '/awas'
     - title: 'Teaching'
       url: '/teaching'
+    - title: 'Media'
+      url: '/media'
     - title: 'About'
       url: '/about'
     - title: 'Contact'

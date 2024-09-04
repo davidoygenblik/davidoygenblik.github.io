@@ -6,7 +6,8 @@ excerpt: Presentation of my work, 'AI Psychiatry Forensic Investigation of Deep 
   Will also include links to highlight some of my favorite works at the conference! 
 ---
 <!--- include above for other works if better ims: featured_image
-: '/images/demo/demo-square.jpg' use_image_in_home: True --->
+: '/images/demo/demo-square.jpg' 
+use_image_in_home: True if want to display image in home screen--->
 
 ![](/images/initial_photos/usenix_logo_300x150_neat_2.png)
 
