@@ -24,12 +24,6 @@ Inaugural GTRI Research Fellowship, **$80K**, Submitted April. 2021. *Received F
 
 USENIX Security Symposium 2024 Student Grant, **$650**, Submitted July. 2024. *Received Grant.*
 
+<!--- --- --->
+<!--- ### Awards --->
 
-
-### Media
-
----
-
-
-
-[AI Psychiatry: Forensic Investigation of Deep Learning Networks in Memory Images](https://scp.cc.gatech.edu/news/fox-5-news-georgia-tech-offers-cybersecurity-major)
