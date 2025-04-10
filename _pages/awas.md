@@ -10,8 +10,7 @@ featured_image: /images/initial_photos/profile_pic.JPG
 
 ---
 
-**AI Psychiatry: Forensic Investigation of Deep Learning Networks in Memory Images.**
-    
+**AI Psychiatry: Forensic Investigation of Deep Learning Networks in Memory Images.**\
 Inaugural GTRI Research Fellowship, **$80K**, Submitted April. 2021. *Received Funding.*
 
 
@@ -20,8 +19,7 @@ Inaugural GTRI Research Fellowship, **$80K**, Submitted April. 2021. *Received F
 
 <!--- NIJ FY24 Research and Development in Forensic Science for Criminal Justice Purposes, **$850K**, Submitted April. 2024. *In Submission.* --->
  
-**USENIX Security 2024 Student Grant.** 
-
+**USENIX Security 2024 Student Grant.**\
 USENIX Security Symposium 2024 Student Grant, **$650**, Submitted July. 2024. *Received Grant.*
 
 <!--- --- --->
