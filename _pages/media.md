@@ -1,6 +1,6 @@
 ---
 title: Media and Appearances 
-subtitle: A list of media that I, or my lab, has appeared in.
+subtitle: A list of media that I, or my lab, have appeared in.
 featured_image: /images/initial_photos/profile_pic.JPG
 ---
 
