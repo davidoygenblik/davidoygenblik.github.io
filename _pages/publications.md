@@ -9,25 +9,25 @@ featured_image: /images/initial_photos/profile_pic.JPG
 ## Conference and Workshop Publications
 
 **Achieving Zen: Combining Mathematical and Programmatic Deep Learning Model Representations for Attribution and Reuse**\
-<u>**Oygenblik D.**</u>, Dermendzhiev D., Sofias F., Yao M., Xu H., Zhang R., Park J., Sikder A., and Saltaformaggio B.,
+<ins>**Oygenblik D.**</ins>, Dermendzhiev D., Sofias F., Yao M., Xu H., Zhang R., Park J., Sikder A., and Saltaformaggio B.,
 To Appear in the Proceedings of the 33rd Network and Distributed System Security (NDSS) Symposium, San Diego, California, Feb. 2026. Acceptance Rate: TBD.\
 [[PDF Coming Soon]]() [[Video Presentation Coming soon]]()[[Source Code Coming Soon]]()
 
 
 **AI Psychiatry: Forensic Investigation of Deep Learning Networks in Memory Images**\
-<u>**Oygenblik D.**</u>, Yagemann C., Zhang J., Mastali A., Park J., and Saltaformaggio B., 
+<ins>**Oygenblik D.**</ins>, Yagemann C., Zhang J., Mastali A., Park J., and Saltaformaggio B., 
  In Proceedings of the 33rd USENIX Security Symposium (Security), Philadelphia, PA, Aug. 2024. Acceptance Rate: ~19%.\
 [[PDF]](https://www.usenix.org/system/files/usenixsecurity24-oygenblik.pdf) [[Video Presentation]](https://www.youtube.com/watch?v=RWhFZxeOv8Y) [[Source Code]](https://github.com/CyFI-Lab-Public/AiP/)
 
 
 **Lock the Door But Keep the Window Open: Extracting App-Protected Accessibility Information from Browser-Rendered Websites**\
-Xu H., Zhang R., Yao M., <u>**Oygenblik D.**</u>, Park J., and Saltaformaggio B., 
+Xu H., Zhang R., Yao M., <ins>**Oygenblik D.**</ins>, Park J., and Saltaformaggio B., 
 To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS), Taipei, Taiwan, Oct. 2025. Acceptance Rate: TBD.\
 [[PDF]](https://saltaformaggio.ece.gatech.edu/publications/zhang2025identifying.pdf) [[Video Presentation]](https://www.youtube.com/watch?v=VKeFfghfLH0)[[Source Code]](https://github.com/CyFI-Lab-Public/COSEC)
 
 
 **Identifying Incoherent Search Sessions: Search Click Fraud Remediation Under Real-World Constraints**\
-Zhang R., Sridhar R., Yao M., Yang Z., <u>**Oygenblik D.**</u>, Xu H., Dave V., Herley C., England P.  and Saltaformaggio B., 
+Zhang R., Sridhar R., Yao M., Yang Z., <ins>**Oygenblik D.**</ins>, Xu H., Dave V., Herley C., England P.  and Saltaformaggio B., 
 In Proceedings of the 46th IEEE Symposium on Security and Privacy, San Francisco, CA, May. 2025. Acceptance Rate: ~14%.\
 [[PDF Coming Soon]]() [[Video Presentation Coming Soon]]()[[Source Code]](https://github.com/CyFI-Lab-Public/SOMBRA)
 
