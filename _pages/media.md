@@ -10,7 +10,9 @@ featured_image: /images/initial_photos/profile_pic.JPG
 [Forensic tool 'reanimates' the 'brains' of AIs that fail in order to understand what went wrong](https://theconversation.com/forensics-tool-reanimates-the-brains-of-ais-that-fail-in-order-to-understand-what-went-wrong-247769)
 
 
-![](/images/initial_photos/aip_conversation.png)
+<p align="center">
+  <img src="/images/initial_photos/aip_conversation.png" alt="aip_conversation" width="65%">
+</p>
 
 
 
@@ -18,7 +20,7 @@ featured_image: /images/initial_photos/profile_pic.JPG
 
 
 <p align="center">
-  <img src="/images/initial_photos/sherlock_holmes.png" alt="Sherlock Holmes" width="75%">
+  <img src="/images/initial_photos/sherlock_holmes.png" alt="Sherlock Holmes" width="65%">
 </p>
 
 
