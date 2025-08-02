@@ -17,7 +17,9 @@ featured_image: /images/initial_photos/profile_pic.JPG
 [The Sherlock Holmes of AI](https://research.gatech.edu/sherlock-holmes-ai)
 
 
-![](/images/initial_photos/sherlock_holmes.png)
+<p align="center">
+  <img src="/images/initial_photos/sherlock_holmes.png" alt="Sherlock Holmes" width="75%">
+</p>
 
 
 
