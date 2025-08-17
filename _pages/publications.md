@@ -32,4 +32,3 @@ In Proceedings of the 46th IEEE Symposium on Security and Privacy, San Francisco
 [[PDF Coming Soon]]() [[Video Presentation Coming Soon]]()[[Source Code]](https://github.com/CyFI-Lab-Public/SOMBRA)
 
 
-<!--- ## Journal Articles --->
