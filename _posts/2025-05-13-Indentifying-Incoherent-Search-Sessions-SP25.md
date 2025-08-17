@@ -23,9 +23,12 @@ Find out more in the complete paper:
 
 Click below to watch the presentation:
 
-[![](images/SP25/slide-screenshot-cosec.png)](https://www.youtube.com/watch?v=VKeFfghfLH0)
+[![]()](https://www.youtube.com/watch?v=VKeFfghfLH0)
+[![][1]][2]
 
-
+[1]: images/SP25/slide-screenshot-cosec.png
+"Tooltip for Jason's avatar"
+[2]:https://www.youtube.com/watch?v=VKeFfghfLH0
 [**Thank you CyFI Lab!!**](https://cyfi.ece.gatech.edu/)
 
 
