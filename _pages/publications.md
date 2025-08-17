@@ -23,12 +23,12 @@ To Appear in the Proceedings of the 33rd Network and Distributed System Security
 **Lock the Door But Keep the Window Open: Extracting App-Protected Accessibility Information from Browser-Rendered Websites**\
 Xu H., Zhang R., Yao M., <ins>**Oygenblik D.**</ins>, Park J., and Saltaformaggio B., 
 To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS), Taipei, Taiwan, Oct. 2025. Acceptance Rate: TBD.\
-[[PDF]](https://saltaformaggio.ece.gatech.edu/publications/zhang2025identifying.pdf) [[Video Presentation]](https://www.youtube.com/watch?v=VKeFfghfLH0)[[Source Code]](https://github.com/CyFI-Lab-Public/COSEC)
+[[PDF Coming Soon]]() [[Video Presentation]](https://www.youtube.com/watch?v=VKeFfghfLH0)[[Source Code]](https://github.com/CyFI-Lab-Public/COSEC)
 
 <br/><br/>
 **Identifying Incoherent Search Sessions: Search Click Fraud Remediation Under Real-World Constraints**\
 Zhang R., Sridhar R., Yao M., Yang Z., <ins>**Oygenblik D.**</ins>, Xu H., Dave V., Herley C., England P.  and Saltaformaggio B., 
 In Proceedings of the 46th IEEE Symposium on Security and Privacy, San Francisco, CA, May. 2025. Acceptance Rate: ~14%.\
-[[PDF Coming Soon]]() [[Video Presentation Coming Soon]]()[[Source Code]](https://github.com/CyFI-Lab-Public/SOMBRA)
+[[PDF]](https://saltaformaggio.ece.gatech.edu/publications/zhang2025identifying.pdf) [[Video Presentation Coming Soon]]()[[Source Code]](https://github.com/CyFI-Lab-Public/SOMBRA)
 
 

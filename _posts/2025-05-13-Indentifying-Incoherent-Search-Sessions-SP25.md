@@ -21,11 +21,11 @@ Find out more in the complete paper:
 
 [Identifying Incoherent Search Sessions Search Click Fraud Remediation Under Real-World Constraints](https://saltaformaggio.ece.gatech.edu/publications/zhang2025identifying.pdf)
 
-[![Click to watch the presentation:][1]][2]
+Click below to watch the presentation:
 
-[1]: images/SP25/slide-screenshot-cosec.png
-"Tooltip for Jason's avatar"
-[2]:https://www.youtube.com/watch?v=VKeFfghfLH0
+[![](https://img.youtube.com/vi/VKeFfghfLH0/maxresdefault.jpg)](https://www.youtube.com/watch?v=VKeFfghfLH0)
+
+
 [**Thank you CyFI Lab!!**](https://cyfi.ece.gatech.edu/)
 
 
