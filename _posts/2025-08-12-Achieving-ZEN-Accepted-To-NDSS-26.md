@@ -1,6 +1,6 @@
 ---
 title: 'ZEN Accepted to NDSS 26'
-date: 2024-08-11 00:00:00
+date: 2025-08-04 00:00:00
 featured_image: images/initial_photos/profile_pic.JPG
 excerpt: My paper, 'Achieving Zen Combining Mathematical and Programmatic Deep Learning Model Representations for Attribution and Reuse', has been accepted to NDSS26!
 ---
