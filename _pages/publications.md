@@ -8,7 +8,6 @@ featured_image: /images/initial_photos/profile_pic.JPG
 
 ## Conference and Workshop Publications
 
-<br/><br/>
 **VillainNet: Targeted Poisoning Attacks Against SuperNets Along the Accuracy-Latency Pareto Frontier**\
 <ins>**Oygenblik D.**</ins>, Vemulapalli A., Agrawal A., Sanyal D., Tumanov A., and Saltaformaggio B.,
 To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS), Taipei, Taiwan, Oct. 2025. Acceptance Rate: TBD.\
