@@ -8,12 +8,19 @@ featured_image: /images/initial_photos/profile_pic.JPG
 
 ## Conference and Workshop Publications
 
+<br/><br/>
+**VillainNet: Targeted Poisoning Attacks Against SuperNets Along the Accuracy-Latency Pareto Frontier**\
+<ins>**Oygenblik D.**</ins>, Vemulapalli A., Agrawal A., Sanyal D., Tumanov A., and Saltaformaggio B.,
+To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS), Taipei, Taiwan, Oct. 2025. Acceptance Rate: TBD.\
+[[PDF Coming Soon]]() [[Video Presentation Coming Soon]]()[[Source Code Coming Soon]]()
+
+<br/><br/>
 **Achieving Zen: Combining Mathematical and Programmatic Deep Learning Model Representations for Attribution and Reuse**\
 <ins>**Oygenblik D.**</ins>, Dermendzhiev D., Sofias F., Yao M., Xu H., Zhang R., Park J., Sikder A., and Saltaformaggio B.,
 To Appear in the Proceedings of the 33rd Network and Distributed System Security (NDSS) Symposium, San Diego, California, Feb. 2026. Acceptance Rate: TBD.\
 [[PDF Coming Soon]]() [[Video Presentation Coming soon]]()[[Source Code Coming Soon]]()
-<br/><br/>
 
+<br/><br/>
 **AI Psychiatry: Forensic Investigation of Deep Learning Networks in Memory Images**\
 <ins>**Oygenblik D.**</ins>, Yagemann C., Zhang J., Mastali A., Park J., and Saltaformaggio B., 
  In Proceedings of the 33rd USENIX Security Symposium (Security), Philadelphia, PA, Aug. 2024. Acceptance Rate: ~19%.\
