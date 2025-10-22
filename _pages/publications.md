@@ -10,7 +10,7 @@ featured_image: /images/initial_photos/profile_pic.JPG
 
 **VillainNet: Targeted Poisoning Attacks Against SuperNets Along the Accuracy-Latency Pareto Frontier**\
 <ins>**Oygenblik D.**</ins>, Vemulapalli A., Agrawal A., Sanyal D., Tumanov A., and Saltaformaggio B.,
-To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS), Taipei, Taiwan, Oct. 2025. Acceptance Rate: TBD.\
+To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS), Taipei, Taiwan, Oct. 2025. Acceptance Rate: 13.9%.\
 [[PDF]](https://davidoygenblik.github.io/pdfs/VNET.pdf) [[Video Presentation Coming Soon]]()[[Source Code]](https://zenodo.org/records/17073435)
 
 <br/><br/>
@@ -28,7 +28,7 @@ To Appear in the Proceedings of the 33rd Network and Distributed System Security
 <br/><br/>
 **Lock the Door But Keep the Window Open: Extracting App-Protected Accessibility Information from Browser-Rendered Websites**\
 Xu H., Zhang R., Yao M., <ins>**Oygenblik D.**</ins>, Park J., and Saltaformaggio B., 
-To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS), Taipei, Taiwan, Oct. 2025. Acceptance Rate: TBD.\
+To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS), Taipei, Taiwan, Oct. 2025. Acceptance Rate: 13.9%.\
 [[PDF Coming Soon]]() [[Video Presentation]](https://www.youtube.com/watch?v=VKeFfghfLH0)[[Source Code]](https://github.com/CyFI-Lab-Public/COSEC)
 
 <br/><br/>
