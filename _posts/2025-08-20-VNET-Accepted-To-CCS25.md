@@ -1,7 +1,7 @@
 ---
 title: 'VillainNet Accepted to CCS 25'
 date: 2025-08-20 00:00:00
-featured_image: images/CCS25/sombra.jpg
+featured_image: /images/CCS25/paper.png
 excerpt: My paper, 'VillainNet Targeted Poisoning Attacks Against SuperNets Along the Accuracy-Latency Pareto Frontier', has been accepted to CCS25!
 ---
 <!--- include above for other works if better ims: featured_image

@@ -1,7 +1,7 @@
 ---
 title: 'VillainNet Presented at CCS25'
 date: 2025-10-15 00:00:00
-featured_image: /images/CCS25/paper.png
+featured_image: /images/CCS25/paper.png 
 excerpt: Presentation of my work, 'VillainNet Targeted Poisoning Attacks Against SuperNets Along the Accuracy-Latency Pareto Frontier', at CCS 25. 
   Will also include links to highlight some of my favorite works at the conference! 
 ---
