@@ -11,7 +11,7 @@ featured_image: /images/initial_photos/profile_pic.JPG
 **VillainNet: Targeted Poisoning Attacks Against SuperNets Along the Accuracy-Latency Pareto Frontier**\
 <ins>**Oygenblik D.**</ins>, Vemulapalli A., Agrawal A., Sanyal D., Tumanov A., and Saltaformaggio B.,
 To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS), Taipei, Taiwan, Oct. 2025. Acceptance Rate: 13.9%.\
-[[PDF]](https://davidoygenblik.github.io/pdfs/VNET.pdf) [[Video Presentation Coming Soon]]()[[Source Code]](https://zenodo.org/records/17073435)
+[[PDF]](https://davidoygenblik.github.io/pdfs/VNET.pdf) [[Video Presentation]](https://youtu.be/H1fyPD8vWDo?si=KL8klwj6Uc7dUTcY)[[Source Code]](https://zenodo.org/records/17073435)
 
 <br/><br/>
 **Achieving Zen: Combining Mathematical and Programmatic Deep Learning Model Representations for Attribution and Reuse**\
