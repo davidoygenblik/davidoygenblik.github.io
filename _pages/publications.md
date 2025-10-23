@@ -29,7 +29,7 @@ To Appear in the Proceedings of the 33rd Network and Distributed System Security
 **Lock the Door But Keep the Window Open: Extracting App-Protected Accessibility Information from Browser-Rendered Websites**\
 Xu H., Zhang R., Yao M., <ins>**Oygenblik D.**</ins>, Park J., and Saltaformaggio B., 
 To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS), Taipei, Taiwan, Oct. 2025. Acceptance Rate: 13.9%.\
-[[PDF Coming Soon]]() [[Video Presentation]]()[[Source Code]](https://github.com/CyFI-Lab-Public/COSEC)
+[[PDF Coming Soon]]()[[Source Code]](https://github.com/CyFI-Lab-Public/COSEC)
 
 <br/><br/>
 **Identifying Incoherent Search Sessions: Search Click Fraud Remediation Under Real-World Constraints**\
