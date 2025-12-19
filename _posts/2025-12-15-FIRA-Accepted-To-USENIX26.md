@@ -1,9 +1,7 @@
 ---
-title: 'VillainNet Presented at CCS25'
-date: 2025-10-15 00:00:00
-featured_image: /images/CCS25/paper.png 
-excerpt: Presentation of my work, 'VillainNet Targeted Poisoning Attacks Against SuperNets Along the Accuracy-Latency Pareto Frontier', at CCS 25. 
-  Will also include links to highlight some of my favorite works at the conference! 
+title: 'FIRA Accepted to USENIX 2026'
+date: 2025-12-17 00:00:00
+excerpt: Our work FIRA will appear in the proceedins of the 2026 USENIX Security Symposium!
 ---
 <!--- include above for other works if better ims: featured_image
 : '/images/demo/demo-square.jpg' 
