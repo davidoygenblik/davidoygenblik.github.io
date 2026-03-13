@@ -13,12 +13,21 @@ featured_image: /images/initial_photos/profile_pic.JPG
 **AI Psychiatry: Forensic Investigation of Deep Learning Networks in Memory Images.**\
 Inaugural GTRI Research Fellowship, **$80K**, Submitted April. 2021. *Received Funding.*
 
+<br/>
 
+**TORTRIX: Tools for Red Teaming with Realism In operational eXercises.**\
+DARPA (IARPA), **$1.3M**, 2023–2027. *Received Funding (As Senior Personnel).*
+
+<br/>
 
  <!--- **Did AI Crash My Car? Automated End-To-End Investigation of AI Failures in Cyber-Physical Systems.** --->
 
 <!--- NIJ FY24 Research and Development in Forensic Science for Criminal Justice Purposes, **$850K**, Submitted April. 2024. *In Submission.* --->
- 
+
+### Travel Grants
+
+---
+
 **USENIX Security 2024 Student Grant.**\
 USENIX Security Symposium 2024 Student Grant, **$650**, Submitted July. 2024. *Received Grant.*
 

@@ -25,12 +25,6 @@ To Appear in the Proceedings of the 33rd Network and Distributed System Security
 In the Proceedings of the 33rd USENIX Security Symposium (Security), Philadelphia, PA, Aug. 2024. Acceptance Rate: ~19%.\
 [[PDF]](https://www.usenix.org/system/files/usenixsecurity24-oygenblik.pdf) [[Video Presentation]](https://www.youtube.com/watch?v=RWhFZxeOv8Y) [[Source Code]](https://github.com/CyFI-Lab-Public/AiP/)
 
-<br/><br/>
-**FIRA: Enabling Automatic Forensic Investigation of Unmanned Aerial Vehicles**\
-Huang Y., <ins>**Oygenblik D.**</ins>, Zhang R., Yao M., Ibrahim M., Sahin B., Xu H., Zonouz S., and Saltaformaggio B.,
-To Appear in the Proceedings of the 35th USENIX Security Symposium (Security), Baltimore, MD, Aug. 2026. Acceptance Rate: TBD.\
-[[PDF Coming Soon]]() [[Video Presentation Coming Soon]]() [[Source Code]](https://zenodo.org/records/17945698)
-
 
 <br/><br/>
 **Lock the Door But Keep the Window Open: Extracting App-Protected Accessibility Information from Browser-Rendered Websites**\
@@ -40,8 +34,26 @@ In the Proceedings of the 32nd ACM Conference on Computer and Communications Sec
 
 <br/><br/>
 **Identifying Incoherent Search Sessions: Search Click Fraud Remediation Under Real-World Constraints**\
-Zhang R., Sridhar R., Yao M., Yang Z., <ins>**Oygenblik D.**</ins>, Xu H., Dave V., Herley C., England P.  and Saltaformaggio B., 
+Zhang R., Sridhar R., Yao M., Yang Z., <ins>**Oygenblik D.**</ins>, Xu H., Dave V., Herley C., England P.  and Saltaformaggio B.,
 In Proceedings of the 46th IEEE Symposium on Security and Privacy, San Francisco, CA, May. 2025. Acceptance Rate: ~14%.\
 [[PDF]](https://saltaformaggio.ece.gatech.edu/publications/zhang2025identifying.pdf) [[Video Presentation]](https://www.youtube.com/watch?v=VKeFfghfLH0)[[Source Code]](https://github.com/CyFI-Lab-Public/SOMBRA)
+
+<br/><br/>
+**Recovering and Rehosting Mobile Local LLM Conversations and Contexts via Memory Forensics**\
+Xu H., <ins>**Oygenblik D.**</ins>, Zhang R., Yao M., Ibrahim M., and Saltaformaggio B.,
+To Appear in the Proceedings of the 47th IEEE Symposium on Security and Privacy (SP), San Francisco, CA, May. 2026. Acceptance Rate: ~13%.\
+[[PDF Coming Soon]]() [[Video Presentation Coming Soon]]()
+
+<br/><br/>
+**Fuzzing Physical State Spaces for Industrial Processes via Physics-Aware Test Generation**\
+Sahin B., <ins>**Oygenblik D.**</ins>, Yao M., Zonouz S., and Saltaformaggio B.,
+To Appear in the Proceedings of the 47th IEEE Symposium on Security and Privacy (SP), San Francisco, CA, May. 2026. Acceptance Rate: ~13%.\
+[[PDF Coming Soon]]() [[Video Presentation Coming Soon]]()
+
+<br/><br/>
+**FIRA: Enabling Automatic Forensic Investigation of Unmanned Aerial Vehicles**\
+Huang Y., <ins>**Oygenblik D.**</ins>, Zhang R., Yao M., Ibrahim M., Sahin B., Xu H., Zonouz S., and Saltaformaggio B.,
+To Appear in the Proceedings of the 35th USENIX Security Symposium (Security), Baltimore, MD, Aug. 2026. Acceptance Rate: TBD.\
+[[PDF Coming Soon]]() [[Video Presentation Coming Soon]]() [[Source Code]](https://zenodo.org/records/17945698)
 
 
