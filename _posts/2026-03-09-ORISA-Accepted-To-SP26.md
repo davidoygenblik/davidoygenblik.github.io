@@ -1,5 +1,5 @@
 ---
-title: 'Our Work ORISA to Appear at IEEE SP 2026'
+title: 'ORISA Accepted to IEEE SP 2026'
 date: 2026-03-09 00:00:00
 excerpt: Our work 'Recovering and Rehosting Mobile Local LLM Conversations and Contexts via Memory Forensics' will appear in the proceedings of the 2026 IEEE Security and Privacy Symposium!
 ---

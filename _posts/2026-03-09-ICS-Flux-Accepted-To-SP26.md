@@ -1,5 +1,5 @@
 ---
-title: 'Our Work ICSFlux to Appear at IEEE SP 2026'
+title: 'ICSFlux Accepted to IEEE SP 2026'
 date: 2026-03-09 00:00:00
 excerpt: Our work 'Fuzzing the Physical Space Physics-Aware Testing of Black-Box Industrial Control Systems' will appear in the proceedings of the 2026 IEEE Security and Privacy Symposium!
 ---
