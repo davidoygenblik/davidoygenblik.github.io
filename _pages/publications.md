@@ -16,7 +16,7 @@ To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communic
 <br/><br/>
 **Achieving Zen: Combining Mathematical and Programmatic Deep Learning Model Representations for Attribution and Reuse**\
 <ins>**Oygenblik D.**</ins>, Dermendzhiev D., Sofias F., Yao M., Xu H., Zhang R., Park J., Sikder A., and Saltaformaggio B.,
-To Appear in the Proceedings of the 33rd Network and Distributed System Security (NDSS) Symposium, San Diego, California, Feb. 2026. Acceptance Rate: TBD.\
+To Appear in the Proceedings of the 33rd Network and Distributed System Security (NDSS) Symposium, San Diego, California, Feb. 2026. Acceptance Rate: 17%.\
 [[PDF]](https://davidoygenblik.github.io/pdfs/ZEN.pdf) [[Video Presentation Coming soon]]()[[Source Code]](https://zenodo.org/records/17060060)
 
 <br/><br/>
@@ -53,7 +53,10 @@ To Appear in the Proceedings of the 47th IEEE Symposium on Security and Privacy 
 <br/><br/>
 **FIRA: Enabling Automatic Forensic Investigation of Unmanned Aerial Vehicles**\
 Huang Y., <ins>**Oygenblik D.**</ins>, Zhang R., Yao M., Ibrahim M., Sahin B., Xu H., Zonouz S., and Saltaformaggio B.,
-To Appear in the Proceedings of the 35th USENIX Security Symposium (Security), Baltimore, MD, Aug. 2026. Acceptance Rate: TBD.\
+To Appear in the Proceedings of the 35th USENIX Security Symposium (Security), Baltimore, MD, Aug. 2026. Acceptance Rate: ~13%.\
 [[PDF Coming Soon]]() [[Video Presentation Coming Soon]]() [[Source Code]](https://zenodo.org/records/17945698)
+
+
+
 
 
