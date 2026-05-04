@@ -1,0 +1,48 @@
+---
+layout: default
+title: Electrical Design & Simulation
+featured_image: /images/electrical_design_and_simulation/FS-AI.png
+---
+
+<section class="intro">
+
+	<div class="wrap">
+
+		<h1>Electrical Design &amp; Simulation</h1>
+		<p>Circuit design, PCB layout, and simulation work.</p>
+
+	</div>
+
+</section>
+
+<section class="blog single">
+
+	<div class="wrap">
+
+		{% assign edesign_posts = site.electrical_design_and_simulation | sort: 'date' | reverse %}
+
+		{% for post in edesign_posts %}
+
+		<article class="blog-post">
+
+			<div class="blog-post__header">
+				<h2 class="blog-post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+				<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
+			</div>
+
+			{% if post.featured_image %}
+			<a href="{{ post.url | relative_url }}" class="blog-post__image" style="background-image: url({{ post.featured_image | relative_url }});"></a>
+			{% endif %}
+
+			<div class="blog-post__content">
+				<p>{{ post.excerpt }}</p>
+				<p><a href="{{ post.url | relative_url }}" class="button">Read More</a></p>
+			</div>
+
+		</article>
+
+		{% endfor %}
+
+	</div>
+
+</section>
