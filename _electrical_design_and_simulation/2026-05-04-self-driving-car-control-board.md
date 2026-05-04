@@ -1,110 +1,124 @@
 ---
-title: 'Custom Control PCB for an Autonomous RC Car Platform'
+title: 'Eagle PCB Design for an Autonomous Crane Car Competition Robot'
 date: 2026-05-04 00:00:02
 featured_image: /images/electrical_design_and_simulation/selfdriving_car_modeling/modeling_car_2.jpg
-excerpt: Design, fabrication, and integration of a custom ESP32-based control PCB for a self-driving RC car, including motor driver interfacing, sensor wiring, and a boom-mounted camera for vision-based autonomous navigation.
+excerpt: Design and fabrication of a custom ESP32-based control PCB in Autodesk Eagle for a competition robot — an autonomous RC car carrying a motorised crane arm capable of detecting and picking up objects.
 ---
 
-![Autonomous RC Car Platform](/images/electrical_design_and_simulation/selfdriving_car_modeling/modeling_car_2.jpg)
+![Crane Car Competition Robot](/images/electrical_design_and_simulation/selfdriving_car_modeling/modeling_car_2.jpg)
 
 ## Overview
 
-This project involved building a custom **control PCB** for an autonomous RC car platform — a small-scale testbed for experimenting with self-driving algorithms. The board integrates an **ESP32 microcontroller**, motor driver ICs, and sensor interfaces, all mounted directly onto the car chassis as a single compact board.
+This project was built for a **robotics competition** requiring an autonomous vehicle to navigate to objects and retrieve them using a motorised crane. The car had to operate fully autonomously — driving, positioning, extending the crane arm, and picking up targets without human input.
 
-The PCB was designed, etched in-house, assembled, and wired up to the car's motors, sensors, and a boom-mounted camera to create a full autonomous vehicle platform.
+The custom control electronics were designed from scratch in **Autodesk EAGLE**, etched in-house, assembled, and integrated onto the RC car chassis.
+
+---
+
+## The Challenge
+
+The competition task demanded simultaneous control of multiple independent systems:
+
+- **Autonomous navigation** — driving to a target position without manual control
+- **Crane actuation** — extending and retracting a boom arm precisely enough to pick up an object
+- **Object interaction** — triggering a gripper or hook mechanism at the right moment
+
+All of this had to run from a single embedded controller, coordinating motor drive outputs, sensor reads, and servo commands in real time.
 
 ---
 
 ## System Architecture
 
-The car is built around three main electrical subsystems:
-
 | Subsystem | Implementation |
 |-----------|---------------|
-| **Main controller** | ESP32 development module (Wi-Fi + Bluetooth capable) |
-| **Motor drive** | Dual DIP-package motor driver ICs |
-| **Perception** | Camera on adjustable boom arm |
-| **Power** | LiPo battery pack with distribution to MCU and drivers |
+| **Main controller** | ESP32 (dual-core, 240 MHz, Wi-Fi + Bluetooth) |
+| **Drive motors** | Two DC motors via dual H-bridge motor driver ICs |
+| **Crane actuation** | Servo motor(s) controlling arm extension and gripper |
+| **Power supply** | LiPo battery pack with regulated 3.3 V / 5 V rails |
+| **Comms** | Wi-Fi for telemetry and remote monitoring during testing |
 
 ---
 
-## Custom PCB
+## PCB Design in Eagle
 
-![Control PCB — Top View with ESP32 Mounted](/images/electrical_design_and_simulation/selfdriving_car_modeling/modeling_car.jpg)
+![Custom Control PCB with ESP32](/images/electrical_design_and_simulation/selfdriving_car_modeling/modeling_car.jpg)
+
+The control board was laid out in **Autodesk EAGLE** and fabricated in-house on single-sided copper-clad FR4. EAGLE's schematic-to-layout workflow was used throughout: the schematic was fully captured with net connections before switching to the PCB editor, ensuring the layout was electrically validated against the design before committing to fabrication.
 
 ### ESP32 Microcontroller
 
-The **ESP32** was chosen as the main controller for its combination of processing capability, onboard Wi-Fi/Bluetooth, and the breadth of available peripherals (PWM, I²C, SPI, ADC). It handles:
+The **ESP32** sits at the centre of the design, providing:
 
-- Generating **PWM signals** for motor speed control
-- Reading encoder or sensor inputs for closed-loop feedback
-- Communicating with the camera module over a serial interface
-- Enabling over-the-air (OTA) firmware updates and wireless telemetry via Wi-Fi
+- **PWM outputs** — independent channels driving each motor driver enable pin, controlling speed of both drive wheels and the crane lift motor
+- **Direction GPIO** — logic-level signals into the motor driver direction inputs
+- **Servo PWM** — 50 Hz PWM signal to the crane servo(s) for position control
+- **Sensor inputs** — ADC and digital GPIO for distance sensors or limit switches on the crane
+- **Wi-Fi** — used during development for live telemetry and remote parameter tuning without reflashing firmware
 
-The ESP32 dev module mounts directly onto the custom PCB via its 38-pin header footprint, keeping it replaceable without reflowing the board.
+### Motor Driver ICs
 
-### Motor Driver Stage
+Two **DIP-package dual H-bridge motor driver ICs** handle the four motor outputs:
 
-Two **DIP-package motor driver ICs** (visible in the centre of the board) provide H-bridge switching for independent control of the left and right drive motors. Each channel supports:
+- One IC drives the **left and right differential drive motors**, enabling forward, reverse, and steering by varying relative wheel speeds
+- The second IC handles the **crane lift motor**, controlling extend and retract of the boom arm
 
-- Forward and reverse direction via logic-level direction inputs from the ESP32
-- Speed control via PWM enable inputs
-- Built-in overcurrent protection and thermal shutdown
+DIP packages were deliberately chosen for the competition build — they are hand-solderable, replaceable in the field, and survive the rough handling of a competition environment better than fine-pitch SMD parts.
 
-Through-hole DIP packages were selected to allow easy replacement during development iterations.
+### Passive Components
 
-### Passive Components and Signal Conditioning
+The through-hole resistor array visible on the board provides:
 
-The through-hole resistors populating the board serve multiple roles:
-- **Pull-up/pull-down resistors** on digital inputs to define default states when ESP32 GPIO pins float
-- **Current-limiting resistors** for indicator LEDs
-- **Filter resistors** on motor feedback lines to reduce switching noise reaching the ADC inputs
+- **Base resistors** for any BJT-buffered control signals
+- **Pull-up/pull-down resistors** on ESP32 GPIO pins to define safe default states (e.g. motors off) at power-up before firmware initialises the outputs
+- **Current-limiting resistors** for status LEDs indicating motor direction and enable state
 
 ### Wiring Harness
 
-A multi-wire harness (coloured wires — power in black/red, motor drive in yellow/orange, sensor lines in purple/brown) connects the PCB to:
-- **Drive motors** — rear wheels
-- **Steering servo** — front wheel direction control
-- **Sensor peripherals** — distance sensors or encoder feedback
-- **LiPo supply** — battery to power rail input
+The colour-coded wire harness connects the board to the full vehicle:
+
+| Colour | Function |
+|--------|----------|
+| Red / Black | LiPo power and ground |
+| Yellow / Orange | Drive motor A and B |
+| Purple | Crane lift motor |
+| Brown | Servo signal |
+| Red / Yellow striped | Sensor power and signal |
 
 ---
 
 ## PCB Fabrication
 
-![PCB Reverse — Through-Hole Soldering and Trace Layout](/images/electrical_design_and_simulation/selfdriving_car_modeling/car_modeling_3.jpeg)
+![PCB Reverse — Trace Layout and Through-Hole Soldering](/images/electrical_design_and_simulation/selfdriving_car_modeling/car_modeling_3.jpeg)
 
-The PCB was fabricated using the **toner-transfer chemical etching** process on single-sided copper-clad FR4:
+The board was fabricated using the **toner-transfer chemical etching** process:
 
-1. Layout artwork generated and printed mirrored
-2. Toner transferred to copper-clad board under heat and pressure
-3. Board etched in **ferric chloride** to remove unprotected copper
-4. Holes drilled for all through-hole component leads and mounting screws
-5. Components hand-soldered
+1. Layout exported from EAGLE as a mirrored top-copper PDF
+2. Toner heat-transferred onto cleaned copper-clad FR4 board
+3. Board etched in **ferric chloride** solution to remove unmasked copper
+4. Toner stripped with acetone, leaving clean copper traces
+5. Holes drilled for all through-hole leads and board mounting screws
+6. Components hand-soldered, starting with ICs then passives then connectors
 
-The reverse side of the board shows the characteristic appearance of a hand-etched single-sided PCB — clean copper traces with hand-drilled through-holes and point-to-point solder joints for component leads.
-
----
-
-## Camera and Perception Mount
-
-The car uses a **boom-arm mounted camera** — visible extending above the car chassis in the platform photo. The elevated mounting position gives the camera a forward-looking, wide-field-of-view angle, similar to a forward-facing driving camera, without ground-level obstruction from the chassis or wheels.
-
-The camera feed is processed either on-board (via the ESP32-CAM variant's onboard image processor) or streamed wirelessly to an external machine running the navigation algorithm, depending on the compute requirements of the autonomy stack being tested.
+The reverse side of the board shows the characteristic hand-etched single-layer trace layout — the two large DIP IC footprints dominate the left half of the board, with the ESP32 header spanning the right and the passive component field filling the centre.
 
 ---
 
-## Autonomous Navigation
+## Autonomous Control Logic
 
-The platform is designed as a flexible testbed. The combination of:
-- **ESP32 Wi-Fi** for remote control override and telemetry
-- **Camera vision** for lane/obstacle detection
-- **PWM motor control** for precise speed and steering commands
+The competition run sequence implemented in firmware:
 
-...allows the car to be used for experimenting with algorithms ranging from simple line-following using colour thresholding through to more involved computer vision pipelines running on a connected host.
+1. **Initialise** — zero all motor outputs, run self-check on sensor readings
+2. **Navigate** — drive toward target using distance sensor data to correct heading
+3. **Position** — slow to a stop at pick-up distance; use fine sensor data for final alignment
+4. **Deploy crane** — PWM ramp-up to extend the boom arm at a controlled speed
+5. **Grip** — trigger the gripper servo at the target extension position
+6. **Retract** — retract boom with object secured
+7. **Return** — navigate back to the drop zone and release
+
+Wi-Fi telemetry logged each stage transition in real time, allowing post-run analysis of where navigation errors occurred.
 
 ---
 
 ## Outcome
 
-The assembled platform successfully operated as a self-driving testbed, with the custom PCB reliably interfacing the ESP32 to the drive system. The in-house fabrication process allowed rapid iteration on the board layout as the system requirements evolved during development.
+The assembled robot successfully demonstrated autonomous crane operation in competition conditions. The custom PCB provided reliable motor drive and servo control throughout, with the ESP32's dual-core architecture allowing navigation logic to run on one core while motor PWM outputs were managed on the other — avoiding the timing conflicts that arise when both run in the same execution loop.

@@ -1,96 +1,127 @@
 ---
-title: 'MOSFET-Based Electromagnet Control Circuit — Design and Fabrication'
+title: 'High-Power Electromagnet Control Circuit — Ball Height Regulation and Thermal Management'
 date: 2026-05-04 00:00:01
-featured_image: /images/electrical_design_and_simulation/electromagnet_control/electro1.jpeg
-excerpt: Design of a MOSFET-switched electromagnet control circuit in Altium Designer, from schematic capture and PCB layout through to in-house etching and physical testing of the fabricated boards.
+featured_image: /images/electrical_design_and_simulation/electromagnet_control/Electro3.png
+excerpt: Design, fabrication, and testing of a MOSFET-switched PWM driver circuit for a high-powered electromagnet, tasked with levitating a steel ball to a target height without burning out the coil — a combined power electronics and thermal management challenge.
 ---
+
+![Electromagnet Test Setup — Coil on Vertical Rail](/images/electrical_design_and_simulation/electromagnet_control/Electro3.png)
 
 ## Overview
 
-This project covers the end-to-end design and fabrication of a **MOSFET-based electromagnet control circuit** — from schematic capture in **Altium Designer** through to physically etched and assembled PCBs tested in the lab.
+This project involved designing a **PWM-controlled driver circuit** for a high-powered electromagnet coil, with the goal of propelling a steel ball to a **specific target height** along a vertical rail — and doing so without overheating the coil.
 
-The circuit drives an inductive electromagnet load using a switched MOSFET, with a BJT-based gate driver stage to ensure fast, reliable switching.
+The task sits at the intersection of **power electronics**, **magnetic force calibration**, and **thermal management**: too little current and the ball doesn't reach the target; too much current sustained for too long and the coil resistance climbs, the insulation degrades, and the winding fails.
+
+The driver circuit was designed in PCB layout software, fabricated in-house using chemical etching, and tested on a purpose-built bench rig.
+
+---
+
+## The Engineering Challenge
+
+### Force vs. Height
+
+The magnetic force an electromagnet exerts on a steel ball falls off sharply with distance — roughly proportional to **1/r²** at the near-field distances relevant here. This means:
+
+- At close range, even modest current produces a strong upward force
+- As the ball accelerates away and distance increases, the force drops rapidly
+- Achieving a **specific height** (rather than just "as high as possible") requires precise control of the current magnitude and the duration of the current pulse
+
+The coil therefore cannot simply be driven at full power — the current must be calibrated so the ball reaches the target height and no higher.
+
+### Thermal Constraint
+
+A high-powered coil wound from many turns of copper wire has measurable **DC resistance**. When current flows, power is dissipated as heat:
+
+**P = I² × R**
+
+For sustained high-current operation this heat builds up in the winding. Copper resistivity increases with temperature, which in turn increases resistive losses further — a positive feedback loop. Beyond a threshold, the enamel insulation on the wire degrades, causing inter-winding shorts and coil failure.
+
+The design therefore had to operate within a **thermal budget**: either by limiting pulse duration, enforcing a minimum off-time between pulses (allowing the coil to cool), or by calibrating the duty cycle such that steady-state temperature stays within safe limits.
 
 ---
 
 ## Circuit Design
 
-### Topology
+### Topology: BJT Gate Driver + P-Channel MOSFET
 
-The control circuit uses a two-stage switching approach:
+![PCB Layout — Two-Layer Design Showing Gate Driver and MOSFET Sections](/images/electrical_design_and_simulation/electromagnet_control/electro1.jpeg)
 
-1. **BJT gate driver (2N3904 NPN transistor)** — takes a logic-level input signal and drives the MOSFET gate with sufficient current to switch it quickly, avoiding prolonged time in the linear region and the associated power dissipation
-2. **P-channel power MOSFET (FED140P)** — the main switching element controlling current through the electromagnet coil
+The driver uses a two-stage switching circuit. A logic-level PWM signal from a microcontroller cannot directly drive a power MOSFET gate with sufficient speed, so an intermediate BJT stage is used:
 
-Using a P-channel MOSFET on the high side simplifies the gate drive requirements: when the gate is pulled low (relative to source) by the BJT, the MOSFET turns on and supplies current to the coil.
+**Stage 1 — 2N3904 NPN BJT (gate driver)**
+- Takes the microcontroller PWM signal at 3.3 V / 5 V logic level
+- Switches base current through the bias resistor network to saturate or cut off
+- In saturation: pulls the MOSFET gate low → P-channel turns ON (current flows to coil)
+- In cutoff: gate floats high → MOSFET turns OFF
 
-### Key Components
+**Stage 2 — FED140P P-Channel MOSFET (main power switch)**
+- Controls the full coil current on the high side
+- Chosen for low R_DS(on) at the operating gate voltage, minimising conduction losses
+- P-channel topology allows simple high-side switching without a bootstrap or charge-pump circuit, since the gate is driven relative to source (which sits at supply voltage)
+
+### Component Summary
 
 | Component | Part | Function |
 |-----------|------|----------|
-| Q1 | 2N3904 NPN BJT | Gate drive / level shifter |
-| Q2 | FED140P P-channel MOSFET | High-side electromagnet switch |
-| R1–R2 | Resistor divider | Gate resistors — limit gate current, control switching speed |
-| R3–R5 | Bias resistors (1 kΩ, 2 kΩ, 4.7 kΩ) | BJT base bias network |
-| JP1–JP6 | 2-pin headers | Input signal, power supply, and coil load connections |
+| Q1 | 2N3904 NPN BJT | PWM gate driver / level shifter |
+| Q2 | FED140P P-ch MOSFET | High-side coil current switch |
+| R1 | 1 kΩ | BJT base current limiting resistor |
+| R2 | 4.7 kΩ | BJT base pull-down (ensures off-state when PWM floats) |
+| R3 | 2 kΩ | MOSFET gate resistor (controls switching speed, limits gate ringing) |
+| R4 | 22 kΩ | MOSFET gate pull-up to V_supply (ensures MOSFET is off if gate driver loses drive) |
+| C1 | Decoupling capacitor | Suppresses supply voltage spikes during switching transients |
+| D1 | Flyback diode | Clamps inductive kick when MOSFET turns off |
+| JP1–JP6 | 2-pin headers | PWM input, supply, and coil connections |
 
 ### Flyback Protection
 
-An inductive load like an electromagnet coil stores energy in its magnetic field. When the MOSFET switches off, this energy must be dissipated — without a flyback diode, the resulting voltage spike can exceed the MOSFET's drain-source breakdown voltage and destroy the device. A **flyback (freewheeling) diode** is placed in anti-parallel across the coil terminals to provide a safe recirculation path for the inductive kick.
+When the MOSFET switches off, the energy stored in the coil's magnetic field (E = ½LI²) must discharge. Without a flyback diode, the resulting back-EMF spike can reach hundreds of volts and destroy the MOSFET. A **flyback (freewheeling) diode** placed in anti-parallel across the coil provides a low-impedance recirculation path, clamping the spike to one diode drop above the supply rail.
+
+### Gate Resistor
+
+The 2 kΩ gate resistor (R3) controls the MOSFET's switching speed. A faster switch-on reduces switching losses, but creates steeper di/dt edges that induce ringing on the supply lines. The gate resistor value was chosen as a compromise — fast enough to minimise thermal dissipation in the MOSFET during transition, slow enough to keep supply noise manageable.
 
 ---
 
-## PCB Layout in Altium
+## PCB Layout and Fabrication
 
-![Altium PCB Layout — Top and Bottom Copper Layers](/images/electrical_design_and_simulation/electromagnet_control/electro1.jpeg)
+![Etched PCBs — Three Board Variants](/images/electrical_design_and_simulation/electromagnet_control/Electro2.JPG)
 
-The PCB layout was completed in Altium Designer. The two-layer view shows:
+The PCB layout was done in two copper layers:
 
-- **Blue (top copper)** — signal routing, component pads, and the gate drive network
-- **Red (bottom copper)** — power traces carrying the coil supply current, routed wider to handle the higher current without excessive resistive loss
+- **Blue (top copper)** — signal routing: PWM input, gate drive network, bias resistors
+- **Red (bottom copper)** — power traces: wider tracks carrying coil supply current from the input connector to the MOSFET drain and on to the coil connector
 
-### Layout Decisions
+Power traces were sized using the **IPC-2221** current-capacity guidelines for the expected peak coil current, ensuring the copper width could handle the thermal load at the trace level without resistive drop adding to the overall driver inefficiency.
 
-- **Component placement** — the 2N3904 BJT is placed immediately adjacent to the MOSFET gate pad to minimise the gate drive loop area, reducing switching noise
-- **Trace widths** — power traces to the coil are sized using the IPC-2221 standard for the expected current level; signal traces use the minimum manufacturable width
-- **Header placement** — all external connections (input signal, supply, coil) are grouped at the board edges for clean wiring in the final assembly
-- **Silkscreen labelling** — component designators and connector pin 1 markers added to aid assembly
+Three board variants were etched in a single session using the **toner-transfer / ferric chloride** process. The different sizes correspond to iterative layout revisions: early versions verified the gate drive behaviour with a small test load; the final board was sized for the full coil current.
 
 ---
 
-## Fabrication — In-House PCB Etching
+## Thermal Management Strategy
 
-![Etched PCBs Ready for Assembly](/images/electrical_design_and_simulation/electromagnet_control/Electro2.JPG)
+To stay within the coil's thermal limits, the following strategies were implemented:
 
-Rather than sending to a PCB manufacturer, the boards were fabricated in-house using the **toner transfer / chemical etching** process on single-sided **FR4 copper-clad laminate**:
+**1. Pulse-and-cool operation**
+Rather than applying DC current, the coil was driven with a controlled pulse of fixed duration. After each firing, a minimum off-time was enforced to allow the winding to dissipate heat into the surrounding air before the next pulse.
 
-1. PCB artwork printed as a mirror image onto transfer paper
-2. Toner heat-transferred onto the copper-clad board
-3. Board submerged in **ferric chloride (FeCl₃)** etchant to remove unprotected copper
-4. Toner residue cleaned with acetone, leaving the copper traces
-5. Holes drilled for through-hole component leads and mounting points
+**2. PWM duty cycle calibration**
+The duty cycle was tuned empirically: starting low and incrementing until the ball consistently reached the target height, then locking that setting. Running the coil at the minimum duty cycle necessary (rather than full power) directly reduces I²R losses.
 
-Three board variants were etched across the session, visible in the photo — the different sizes correspond to layout iterations and separate sub-circuit sections tested independently before combining.
+**3. Coil resistance monitoring**
+Coil resistance increases measurably with temperature (copper has a temperature coefficient of ~0.004 /°C). By monitoring supply voltage and current draw, resistance could be inferred and used as a proxy for winding temperature — if resistance climbed beyond a threshold, firing was inhibited until it fell back.
 
 ---
 
-## Lab Testing and Electromagnet Integration
+## Test Rig
 
-![Electromagnet Coil and Test Setup](/images/electrical_design_and_simulation/electromagnet_control/Electro3.png)
+The lab setup shows the electromagnet coil mounted in a **vertical rail fixture** (aluminium extrusion channel) with the steel ball constrained to move along the rail axis. A bench power supply provided the coil voltage, and an oscilloscope monitored the drain voltage of the MOSFET to confirm clean switching and verify the flyback clamp was operating correctly.
 
-With the boards assembled, the electromagnet coil itself was wound and tested on the bench. The lab setup shows:
-
-- The wound **electromagnet coil** clamped in a test jig
-- A **bench power supply** (background) providing the coil drive voltage
-- The control PCB receiving a logic-level PWM input, with coil current measured via a series shunt
-
-Switching behaviour was verified with an oscilloscope across the MOSFET drain, confirming:
-- Clean turn-on and turn-off transitions
-- Flyback spike clamped within the MOSFET's safe operating area
-- Stable operation across the target duty-cycle range
+Ball height was measured visually against a calibrated scale on the rail, with pulse parameters adjusted between shots until the target height was reliably achieved.
 
 ---
 
 ## Outcome
 
-The control circuit successfully switched the electromagnet coil with reliable on/off behaviour and no component failures across the test duration. The in-house etching process demonstrated a fast, low-cost route from Altium layout to physical board — particularly useful for iterating on the design before committing to a professionally manufactured PCB.
+The circuit successfully controlled ball height to the target specification across repeated firings, with the thermal management strategy keeping coil temperature within safe operating range. The combination of BJT gate drive and P-channel MOSFET switching provided reliable, repeatable performance, with no component failures across the test duration.

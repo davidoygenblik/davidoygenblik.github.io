@@ -13,6 +13,9 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
+  electrical_design_and_simulation:
+    output: true
+    permalink: /electrical_design_and_simulation/:slug
 
 defaults:
   -
@@ -38,6 +41,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  -
+    scope:
+      path: ""
+      type: "electrical_design_and_simulation"
+    values:
+      layout: "edesign_post"
 
 markdown: kramdown
 
