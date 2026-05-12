@@ -1,6 +1,7 @@
 ---
 title: 'FIRA Accepted to USENIX 2026'
 date: 2025-12-17 00:00:00
+featured_image: /images/USENIX_2026/venue.png
 excerpt: Our work FIRA will appear in the proceedings of the 2026 USENIX Security Symposium!
 ---
 <!--- include above for other works if better ims: featured_image
