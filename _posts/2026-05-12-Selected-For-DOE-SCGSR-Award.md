@@ -1,6 +1,7 @@
 ---
 title: 'Selected for the DOE Office of Science Graduate Student Research (SCGSR) Award'
 date: 2026-05-12 00:00:00
+featured_image: /images/NLR/picture_of_NLR.png
 excerpt: I have been selected as one of 75 PhD students nationwide to receive the Department of Energy Office of Science Graduate Student Research (SCGSR) Award. I will be conducting research at the National Lab of the Rockies (NLR) with my collaborating scientist Dr. Shuva Paul.
 ---
 
