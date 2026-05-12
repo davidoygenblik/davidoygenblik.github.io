@@ -1,13 +1,14 @@
 ---
 title: 'ORISA Accepted to IEEE SP 2026'
 date: 2026-03-09 00:00:00
+featured_image: /images/SP26/Venue.png
 excerpt: Our work 'Recovering and Rehosting Mobile Local LLM Conversations and Contexts via Memory Forensics' will appear in the proceedings of the 2026 IEEE Security and Privacy Symposium!
 ---
 <!--- include above for other works if better ims: featured_image
 : '/images/demo/demo-square.jpg' 
 use_image_in_home: True if want to display image in home screen--->
 
-![](/images/USENIX_2026/logo.png)
+![](/images/SP25/sp-logo.jpg)
 
 Our paper, *Recovering and Rehosting Mobile Local LLM Conversations and Contexts via Memory Forensics* has been accepted to the 47th IEEE S&P Symposium.
 
