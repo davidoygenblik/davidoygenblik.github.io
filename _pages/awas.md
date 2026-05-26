@@ -20,17 +20,16 @@ DARPA (IARPA), **$1.3M**, 2023–2027. *Received Funding (As Senior Personnel).*
 
 <br/>
 
- <!--- **Did AI Crash My Car? Automated End-To-End Investigation of AI Failures in Cyber-Physical Systems.** --->
 
-<!--- NIJ FY24 Research and Development in Forensic Science for Criminal Justice Purposes, **$850K**, Submitted April. 2024. *In Submission.* --->
-
-### Travel Grants
-
----
 
 **USENIX Security 2024 Student Grant.**\
 USENIX Security Symposium 2024 Student Grant, **$650**, Submitted July. 2024. *Received Grant.*
 
-<!--- --- --->
-<!--- ### Awards --->
+
+### Awards
+
+---
+
+**DOE Office of Science Graduate Student Research (SCGSR) Award.**\
+U.S. Department of Energy Office of Science, **Research Fellowship**, Awarded May 2026. *Received Award.* [[Announcement]](https://www.energy.gov/science/articles/outstanding-us-graduate-students-selected-department-energy-office-science)
 
