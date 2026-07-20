@@ -8,6 +8,11 @@ featured_image: /images/initial_photos/profile_pic.JPG
 
 ## Conference and Workshop Publications
 
+**Finding FAULTs in Architectural Backdoors: Why Trigger Detection Fails Under Real-World Conditions**\
+<ins>**Oygenblik D.**</ins>, Akella T., Gupta T., Huang Y., and Saltaformaggio B.,
+To Appear in the Proceedings of the 33rd ACM Conference on Computer and Communications Security (CCS), The Hague, Netherlands, Nov. 2026. Acceptance Rate: TBD.\
+[[PDF]](https://davidoygenblik.github.io/pdfs/FAULT.pdf) [[Video Presentation Coming Soon]]() [[Source Code Coming Soon]]()
+
 **VillainNet: Targeted Poisoning Attacks Against SuperNets Along the Accuracy-Latency Pareto Frontier**\
 <ins>**Oygenblik D.**</ins>, Vemulapalli A., Agrawal A., Sanyal D., Tumanov A., and Saltaformaggio B.,
 To Appear in the Proceedings of the 32nd ACM Conference on Computer and Communications Security (CCS), Taipei, Taiwan, Oct. 2025. Acceptance Rate: 13.9%.\
@@ -42,19 +47,19 @@ In Proceedings of the 46th IEEE Symposium on Security and Privacy, San Francisco
 **Recovering and Rehosting Mobile Local LLM Conversations and Contexts via Memory Forensics**\
 Xu H., <ins>**Oygenblik D.**</ins>, Zhang R., Yao M., Ibrahim M., and Saltaformaggio B.,
 To Appear in the Proceedings of the 47th IEEE Symposium on Security and Privacy (SP), San Francisco, CA, May. 2026. Acceptance Rate: ~13%.\
-[[PDF Coming Soon]]() [[Video Presentation Coming Soon]]()
+[[PDF]](https://www.researchgate.net/publication/408319119_Recovering_and_Rehosting_Mobile_Local_LLM_Conversations_and_Contexts_via_Memory_Forensics)
 
 <br/><br/>
 **Fuzzing Physical State Spaces for Industrial Processes via Physics-Aware Test Generation**\
 Sahin B., <ins>**Oygenblik D.**</ins>, Yao M., Zonouz S., and Saltaformaggio B.,
 To Appear in the Proceedings of the 47th IEEE Symposium on Security and Privacy (SP), San Francisco, CA, May. 2026. Acceptance Rate: ~13%.\
-[[PDF Coming Soon]]() [[Video Presentation Coming Soon]]()
+[[PDF]](https://davidoygenblik.github.io/pdfs/ICSFlux.pdf) 
 
 <br/><br/>
 **FIRA: Enabling Automatic Forensic Investigation of Unmanned Aerial Vehicles**\
 Huang Y., <ins>**Oygenblik D.**</ins>, Zhang R., Yao M., Ibrahim M., Sahin B., Xu H., Zonouz S., and Saltaformaggio B.,
 To Appear in the Proceedings of the 35th USENIX Security Symposium (Security), Baltimore, MD, Aug. 2026. Acceptance Rate: ~13%.\
-[[PDF Coming Soon]]() [[Video Presentation Coming Soon]]() [[Source Code]](https://zenodo.org/records/17945698)
+[[PDF]](https://www.usenix.org/conference/usenixsecurity26/presentation/huang-yizhi) [[Video Presentation Coming Soon]]() [[Source Code]](https://github.com/CyFI-Lab-Public/FIRA)
 
 
 
